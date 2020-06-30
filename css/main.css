@@ -2055,7 +2055,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ee0986;
+  background: #ecc1a3;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3246,10 +3246,10 @@ pre {
   -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
 }
 * {
-  cursor: url("http://om8u46rmb.bkt.clouddn.com/sword2.ico"), auto !important;
+  cursor: url("/uploads/default.ico"), auto !important;
 }
 :active {
-  cursor: url("http://om8u46rmb.bkt.clouddn.com/sword1.ico"), auto !important;
+  cursor: url("/uploads/active.ico"), auto !important;
 }
 #heart {
   color: #e51c1c;
