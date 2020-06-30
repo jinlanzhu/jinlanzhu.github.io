@@ -93,7 +93,7 @@
 <meta property="og:site_name" content="pig&#39;s Blog">
 <meta property="og:description" content="Markdown语法介绍">
 <meta property="article:published_time" content="2020-06-24T02:20:32.000Z">
-<meta property="article:modified_time" content="2020-06-30T11:52:39.118Z">
+<meta property="article:modified_time" content="2020-06-30T14:14:24.133Z">
 <meta property="article:author" content="Z&amp;Jinlan">
 <meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="Markdown">
@@ -433,7 +433,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  547 字
+                  543 字
                 </span>
               
 
@@ -474,7 +474,7 @@
       
 
       
-        <h2 id="一、创建文章"><a href="#一、创建文章" class="headerlink" title="一、创建文章"></a>一、创建文章</h2><p>在站点文件夹中打开git bash，输入如下命令创建文章，其中title为文章的标题。</p>
+        <h2 id="创建文章"><a href="#创建文章" class="headerlink" title="创建文章"></a>创建文章</h2><p>在站点文件夹中打开git bash，输入如下命令创建文章，其中title为文章的标题。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new &quot;title&quot;</span><br></pre></td></tr></table></figure>
 <p>此时会在source/_post文件夹中创建了一个名为title.md的文件，而这个文件也就是将要发布到网站上的原始文件，记录文章内容。</p>
 <a id="more"></a>
@@ -506,14 +506,14 @@
 </tbody></table>
 </li>
 </ul>
-<h2 id="二、Markdown语法"><a href="#二、Markdown语法" class="headerlink" title="二、Markdown语法"></a>二、Markdown语法</h2><p>  Markdown语法的具体详情参考</p>
-<h2 id="三、编辑文章"><a href="#三、编辑文章" class="headerlink" title="三、编辑文章"></a>三、编辑文章</h2><h4 id="模板设置"><a href="#模板设置" class="headerlink" title="模板设置"></a>模板设置</h4><p>在使用命令 <code>hexo new &quot;title&quot;</code>创建文章时，Hexo会根据/scaffolds/post.md对文章进行初始化，换言之，/scaffolds/post.md/就是新文章的模板。</p>
+<h2 id="Markdown语法"><a href="#Markdown语法" class="headerlink" title="Markdown语法"></a>Markdown语法</h2><p>  Markdown语法的具体详情参考</p>
+<h2 id="编辑文章"><a href="#编辑文章" class="headerlink" title="编辑文章"></a>编辑文章</h2><h4 id="模板设置"><a href="#模板设置" class="headerlink" title="模板设置"></a>模板设置</h4><p>在使用命令 <code>hexo new &quot;title&quot;</code>创建文章时，Hexo会根据/scaffolds/post.md对文章进行初始化，换言之，/scaffolds/post.md/就是新文章的模板。</p>
 <p>title: Hexo-撰写文章<br>date: 1592965232000<br>tags:<br>categories: </p>
 <h4 id="头部设置"><a href="#头部设置" class="headerlink" title="头部设置"></a>头部设置</h4><p>在每篇利用 Hexo 创建的文章的开头，都会有对文章进行说明的文字，叫做 文章头部文章的头部除了可以设置文章标题、发布日期等基础信息外，还可以为文章添加标签、分类等。<br>一个简单的示例如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">title: Title</span><br><span class="line">date: YYYY-MM-DD HH:MM:SS</span><br><span class="line">tags: [tag1, tag2, ...]</span><br><span class="line">categories: category</span><br></pre></td></tr></table></figure>
 <p><strong>注意：</strong>  属性与属性之间必须有一个空格，否则会解析错误。</p>
 <h4 id="首页显示"><a href="#首页显示" class="headerlink" title="首页显示"></a>首页显示</h4><p>在利用 Hexo 框架搭建的博客网站中，首页会显示文章的内容，且默认显示文章的全部内容，如果当文章太长的时候就会显得十分冗余，所以我们有必要对其进行精简。这时，我们只需在文章中使用 <code>&lt;!--more--&gt;</code> 标志即可，表示只会显示标志前面的内容</p>
-<h2 id="四、发布文章"><a href="#四、发布文章" class="headerlink" title="四、发布文章"></a>四、发布文章</h2><p>在站点文件夹中打开 git bash，输入如下命令部署和发布文章</p>
+<h2 id="发布文章"><a href="#发布文章" class="headerlink" title="发布文章"></a>发布文章</h2><p>在站点文件夹中打开 git bash，输入如下命令部署和发布文章</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g -d</span><br></pre></td></tr></table></figure>
 <p>建议：在使用 hexo g 部署之后，可以先使用 hexo s 运行本地站点，然后在浏览器输入地址 <a href="http://lacolhost:4000/" target="_blank" rel="noopener">http://lacolhost:4000/</a> 查看运行结果，检查无误后再使用 hexo d 发布</p>
 
@@ -800,7 +800,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、创建文章"><span class="nav-number">1.</span> <span class="nav-text">一、创建文章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、Markdown语法"><span class="nav-number">2.</span> <span class="nav-text">二、Markdown语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、编辑文章"><span class="nav-number">3.</span> <span class="nav-text">三、编辑文章</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#模板设置"><span class="nav-number">3.0.1.</span> <span class="nav-text">模板设置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#头部设置"><span class="nav-number">3.0.2.</span> <span class="nav-text">头部设置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#首页显示"><span class="nav-number">3.0.3.</span> <span class="nav-text">首页显示</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四、发布文章"><span class="nav-number">4.</span> <span class="nav-text">四、发布文章</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建文章"><span class="nav-number">1.</span> <span class="nav-text">创建文章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Markdown语法"><span class="nav-number">2.</span> <span class="nav-text">Markdown语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#编辑文章"><span class="nav-number">3.</span> <span class="nav-text">编辑文章</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#模板设置"><span class="nav-number">3.0.1.</span> <span class="nav-text">模板设置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#头部设置"><span class="nav-number">3.0.2.</span> <span class="nav-text">头部设置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#首页显示"><span class="nav-number">3.0.3.</span> <span class="nav-text">首页显示</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#发布文章"><span class="nav-number">4.</span> <span class="nav-text">发布文章</span></a></li></ol></div>
             
 
           </div>
