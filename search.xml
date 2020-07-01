@@ -3,7 +3,9 @@
   <entry>
     <title>Hexo-撰写文章</title>
     <url>/jinlanzhu.github.io/2020/06/24/Hexo-%E6%92%B0%E5%86%99%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<h2 id="创建文章"><a href="#创建文章" class="headerlink" title="创建文章"></a>创建文章</h2><p>在站点文件夹中打开git bash，输入如下命令创建文章，其中title为文章的标题。</p>
+    <content><![CDATA[<meta name="referrer" content="no-referrer">
+
+<h2 id="创建文章"><a href="#创建文章" class="headerlink" title="创建文章"></a>创建文章</h2><p>在站点文件夹中打开git bash，输入如下命令创建文章，其中title为文章的标题。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo new &quot;title&quot;</span><br></pre></td></tr></table></figure>
 <p>此时会在source/_post文件夹中创建了一个名为title.md的文件，而这个文件也就是将要发布到网站上的原始文件，记录文章内容。</p>
 <a id="more"></a>
@@ -57,7 +59,9 @@
   <entry>
     <title>Markdown语法</title>
     <url>/jinlanzhu.github.io/2020/06/25/Markdown%E8%AF%AD%E6%B3%95/</url>
-    <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><h3 id="Markdown是什么"><a href="#Markdown是什么" class="headerlink" title="Markdown是什么"></a>Markdown是什么</h3><p>Markdown是一种轻量级的标记语言，它以纯文本的形式（易读、易写、易更改）编写文档，且最终以HTML格式发布。</p>
+    <content><![CDATA[<meta name="referrer" content="no-referrer">
+
+<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><h3 id="Markdown是什么"><a href="#Markdown是什么" class="headerlink" title="Markdown是什么"></a>Markdown是什么</h3><p>Markdown是一种轻量级的标记语言，它以纯文本的形式（易读、易写、易更改）编写文档，且最终以HTML格式发布。</p>
 <a id="more"></a>
 
 
@@ -156,7 +160,7 @@
 <h3 id="转义字符、字体、字号、颜色"><a href="#转义字符、字体、字号、颜色" class="headerlink" title="转义字符、字体、字号、颜色"></a>转义字符、字体、字号、颜色</h3><h4 id="转义字符"><a href="#转义字符" class="headerlink" title="转义字符"></a>转义字符</h4><p>Markdown中的转义字符为\，转义的有：</p>
 <p>\ 反斜杠 ` 反引号 * 星号 _ 下划线 {} 大括号 [] 中括号 () 小括号  # 井号 + 加号 - 减号 . 英文句号 ! 感叹号</p>
 <h4 id="字体、字号、颜色"><a href="#字体、字号、颜色" class="headerlink" title="字体、字号、颜色"></a>字体、字号、颜色</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;font face&#x3D;&quot;黑体&quot;&gt;我是黑体字&lt;&#x2F;font&gt;</span><br><span class="line">&lt;font face&#x3D;&quot;微软雅黑&quot;&gt;我是微软雅黑&lt;&#x2F;font&gt;</span><br><span class="line">&lt;font face&#x3D;&quot;STCAIYUN&quot;&gt;我是华文彩云&lt;&#x2F;font&gt;</span><br><span class="line">&lt;font color&#x3D;#0099ff size&#x3D;12 face&#x3D;&quot;黑体&quot;&gt;黑体&lt;&#x2F;font&gt;</span><br><span class="line">&lt;font color&#x3D;gray size&#x3D;5&gt;gray&lt;&#x2F;font&gt;</span><br><span class="line">&lt;font color&#x3D;#00ffff size&#x3D;3&gt;null&lt;&#x2F;font&gt;</span><br></pre></td></tr></table></figure>
-<p>效果如下：<br><font face="黑体">我是黑体字</font><br><font face="微软雅黑">我是微软雅黑</font><br><font face="STCAIYUN">我是华文彩云</font><br><font color=#0099ff size=12 face="黑体">黑体</font><br><font color=gray size=5>gray</font><br><font color=#00ffff size=3>null</font></p>
+<p>效果如下：<br><font face="黑体">我是黑体字</font><br><font face="微软雅黑">我是微软雅黑</font><br><font face="STCAIYUN">我是华文彩云</font><br><font color="#0099ff" size="12" face="黑体">黑体</font><br><font color="gray" size="5">gray</font><br><font color="#00ffff" size="3">null</font></p>
 <h3 id="内容目录"><a href="#内容目录" class="headerlink" title="内容目录"></a>内容目录</h3><p>在段落中填写 [TOC] 以显示全文内容的目录结构。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[TOC]</span><br></pre></td></tr></table></figure>
 
