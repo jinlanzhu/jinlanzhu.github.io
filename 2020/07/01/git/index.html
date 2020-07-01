@@ -86,18 +86,29 @@
 
 
 
-<meta name="description" content="常旅客">
+<meta name="description" content="主要介绍git将本地文件推送到GitHub远程仓库，主要包括git将本地文件推送到GitHub远程仓库的使用实例、基本知识点以及注意事项。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git上传本地项目到GitHub">
 <meta property="og:url" content="https://jinlanzhu.github.io/2020/07/01/git/index.html">
 <meta property="og:site_name" content="pig&#39;s Blog">
-<meta property="og:description" content="常旅客">
+<meta property="og:description" content="主要介绍git将本地文件推送到GitHub远程仓库，主要包括git将本地文件推送到GitHub远程仓库的使用实例、基本知识点以及注意事项。">
+<meta property="og:image" content="https://jinlanzhu.github.io/jinlanzhu.github.io/2020/07/01/git/new.png">
+<meta property="og:image" content="https://jinlanzhu.github.io/jinlanzhu.github.io/2020/07/01/git/new_1.png">
+<meta property="og:image" content="https://jinlanzhu.github.io/jinlanzhu.github.io/2020/07/01/git/local.png">
+<meta property="og:image" content="https://jinlanzhu.github.io/jinlanzhu.github.io/2020/07/01/git/init.png">
+<meta property="og:image" content="https://jinlanzhu.github.io/jinlanzhu.github.io/2020/07/01/git/add.png">
+<meta property="og:image" content="https://jinlanzhu.github.io/jinlanzhu.github.io/2020/07/01/git/commit.png">
+<meta property="og:image" content="https://jinlanzhu.github.io/jinlanzhu.github.io/2020/07/01/git/remote_add.png">
+<meta property="og:image" content="https://jinlanzhu.github.io/jinlanzhu.github.io/2020/07/01/git/push.png">
+<meta property="og:image" content="https://jinlanzhu.github.io/jinlanzhu.github.io/2020/07/01/git/unnomal.png">
+<meta property="og:image" content="https://jinlanzhu.github.io/jinlanzhu.github.io/2020/07/01/git/unnomal_deal.png">
 <meta property="article:published_time" content="2020-07-01T02:09:18.000Z">
-<meta property="article:modified_time" content="2020-07-01T02:09:53.323Z">
+<meta property="article:modified_time" content="2020-07-01T08:41:36.730Z">
 <meta property="article:author" content="Z&amp;Jinlan">
 <meta property="article:tag" content="git">
 <meta property="article:tag" content="GitHub">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://jinlanzhu.github.io/jinlanzhu.github.io/2020/07/01/git/new.png">
 
 
 
@@ -429,7 +440,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  0 字
+                  373 字
                 </span>
               
 
@@ -466,7 +477,20 @@
       
 
       
-        
+        <p>主要介绍git将本地文件推送到GitHub远程仓库，主要包括git将本地文件推送到GitHub远程仓库的使用实例、基本知识点以及注意事项。</p>
+<a id="more"></a>
+
+<h2 id="创建新项目"><a href="#创建新项目" class="headerlink" title="创建新项目"></a>创建新项目</h2><p>在GitHub上创建新的项目文件<br><img src="/jinlanzhu.github.io/2020/07/01/git/new.png" alt="新建仓库"><br>创建之后会进入新的页面，看到如下内容<br><img src="/jinlanzhu.github.io/2020/07/01/git/new_1.png" alt="创建页面"></p>
+<h2 id="打开Git"><a href="#打开Git" class="headerlink" title="打开Git"></a>打开Git</h2><h3 id="切换本地项目目录"><a href="#切换本地项目目录" class="headerlink" title="切换本地项目目录"></a>切换本地项目目录</h3><p>打开本地项目目录<br><img src="/jinlanzhu.github.io/2020/07/01/git/local.png" alt="本地目录"></p>
+<h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><p>输入：<code>git init</code>，是让当前项目的目录中生成本地的git管理<br><img src="/jinlanzhu.github.io/2020/07/01/git/init.png" alt="初始化"></p>
+<h3 id="添加"><a href="#添加" class="headerlink" title="添加"></a>添加</h3><p>输入：<code>git add .</code>，将项目上的所有文件添加到仓库<br><img src="/jinlanzhu.github.io/2020/07/01/git/add.png" alt="添加"></p>
+<h3 id="提交"><a href="#提交" class="headerlink" title="提交"></a>提交</h3><p>输入：<code>git commit -m &quot;&quot;</code>，进行提交<br><img src="/jinlanzhu.github.io/2020/07/01/git/commit.png" alt="提交"></p>
+<h2 id="关联GitHub"><a href="#关联GitHub" class="headerlink" title="关联GitHub"></a>关联GitHub</h2><h3 id="添加远程库"><a href="#添加远程库" class="headerlink" title="添加远程库"></a>添加远程库</h3><p>输入：<code>git remote add origin https://github.com/jinlanzhu/survey.git</code>，将本地的仓库关联到GitHub上<br><img src="/jinlanzhu.github.io/2020/07/01/git/remote_add.png" alt="提交"></p>
+<h3 id="推送"><a href="#推送" class="headerlink" title="推送"></a>推送</h3><p>输入<code>git push origin master</code>，将本地代码上传到GitHub仓库<br>如果没有异常，会等待几秒，然后跳出一个让你输入Username和Password 的窗口，你只要输入github的登录账号和密码就行了<br><img src="/jinlanzhu.github.io/2020/07/01/git/push.png" alt="提交"></p>
+<p>若出现</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">To https:&#x2F;&#x2F;github.com&#x2F;jinlanzhu&#x2F;rotate_photo.git</span><br><span class="line"> ! [rejected]        master -&gt; master (fetch first)</span><br><span class="line">error: failed to push some refs to &#39;https:&#x2F;&#x2F;github.com&#x2F;jinlanzhu&#x2F;rotate_photo.git&#39;</span><br><span class="line">hint: Updates were rejected because the remote contains work that you do</span><br><span class="line">hint: not have locally. This is usually caused by another repository pushing</span><br><span class="line">hint: to the same ref. You may want to first integrate the remote changes</span><br><span class="line">hint: (e.g., &#39;git pull ...&#39;) before pushing again.</span><br><span class="line">hint: See the &#39;Note about fast-forwards&#39; in &#39;git push --help&#39; for details.</span><br></pre></td></tr></table></figure>
+<p>输入<code>git pull --rebase origin master</code>，再输入<code>git push origin master</code>，再输入即可。<br><img src="/jinlanzhu.github.io/2020/07/01/git/unnomal.png" alt="提交"><br><img src="/jinlanzhu.github.io/2020/07/01/git/unnomal_deal.png" alt="提交"></p>
+
       
     </div>
     
@@ -638,8 +662,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -728,6 +761,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建新项目"><span class="nav-number">1.</span> <span class="nav-text">创建新项目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#打开Git"><span class="nav-number">2.</span> <span class="nav-text">打开Git</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#切换本地项目目录"><span class="nav-number">2.1.</span> <span class="nav-text">切换本地项目目录</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#初始化"><span class="nav-number">2.2.</span> <span class="nav-text">初始化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加"><span class="nav-number">2.3.</span> <span class="nav-text">添加</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#提交"><span class="nav-number">2.4.</span> <span class="nav-text">提交</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关联GitHub"><span class="nav-number">3.</span> <span class="nav-text">关联GitHub</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#添加远程库"><span class="nav-number">3.1.</span> <span class="nav-text">添加远程库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#推送"><span class="nav-number">3.2.</span> <span class="nav-text">推送</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 
@@ -759,7 +808,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共3k字</span>
+  <span class="post-count">博客全站共3.4k字</span>
 </div>
 
         
