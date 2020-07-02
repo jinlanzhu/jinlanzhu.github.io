@@ -1,55 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>3D旋转相册</title>
-    <url>/jinlanzhu.github.io/2020/07/01/project/</url>
-    <content><![CDATA[<p><font>抖音很火的3d旋转相册！</font></p>
-<a id="more"></a>
+    <title>Hexo-撰写文章</title>
+    <url>/jinlanzhu.github.io/2020/06/24/Hexo-%E6%92%B0%E5%86%99%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer">
 
-<h2 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h2><p>具体详情可到：<a href="https://jinlanzhu.github.io/rotate_photo/" title="旋转相册">旋转相册</a></p>
-<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><h3 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h3><p>先准备12张图片备用（也可以是6张），放到images文件夹中<br><img src="/jinlanzhu.github.io/2020/07/01/project/photo_img.png" alt="相册图片准备"></p>
-<h3 id="文件结构"><a href="#文件结构" class="headerlink" title="文件结构"></a>文件结构</h3><p><img src="/jinlanzhu.github.io/2020/07/01/project/photo_index.png" alt="文件结构"></p>
-<h4 id="css"><a href="#css" class="headerlink" title="css"></a>css</h4><p>css文件夹：index.css</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">body, div, img &#123;</span><br><span class="line">  margin: 0;</span><br><span class="line">  padding: 0;</span><br><span class="line">&#125;</span><br><span class="line">body &#123;</span><br><span class="line">  width: 100%;</span><br><span class="line">  height: 600px;</span><br><span class="line">  background: linear-gradient(#fb3 20%, #58a 80%);</span><br><span class="line">&#125;</span><br><span class="line">.cude &#123;</span><br><span class="line">  width: 200px;</span><br><span class="line">  height: 200px;</span><br><span class="line">  margin: 200px auto;</span><br><span class="line">  transform-style: preserve-3d;</span><br><span class="line">  animation: rotate 20s infinite;</span><br><span class="line">  animation-timing-function: linear;</span><br><span class="line">&#125;</span><br><span class="line">.cude .cude-out &#123;</span><br><span class="line">  width: 200px;</span><br><span class="line">  height: 200px;</span><br><span class="line">  position: relative;</span><br><span class="line">&#125;</span><br><span class="line">.cude-out div&#123;</span><br><span class="line">  width: 200px;</span><br><span class="line">  height: 200px;</span><br><span class="line">  position: absolute;</span><br><span class="line">  transition: all .4s;</span><br><span class="line">&#125;</span><br><span class="line">.cude-out div img &#123;</span><br><span class="line">  width: 200px;</span><br><span class="line">  height: 200px;</span><br><span class="line">&#125;</span><br><span class="line">@keyframes rotate &#123;</span><br><span class="line">  from &#123;</span><br><span class="line">    transform: rotateX(0deg) rotateY(0deg);</span><br><span class="line">  &#125;</span><br><span class="line">  to &#123;</span><br><span class="line">    transform: rotateX(360deg) rotateY(360deg);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">.cude-out .out-font &#123;</span><br><span class="line">  transform: translateZ(100px);</span><br><span class="line">  background: #9ccd63;</span><br><span class="line">&#125;</span><br><span class="line">.cude-out .out-back &#123;</span><br><span class="line">  transform: translateZ(-100px);</span><br><span class="line">  background: #ddce4a;</span><br><span class="line">&#125;</span><br><span class="line">.cude-out .out-left &#123;</span><br><span class="line">  transform: rotateY(90deg) translateZ(100px);</span><br><span class="line">  background: #00FFFF;</span><br><span class="line">&#125;</span><br><span class="line">.cude-out .out-right &#123;</span><br><span class="line">  transform: rotateY(-90deg) translateZ(100px);</span><br><span class="line">  background: #0000FF;</span><br><span class="line">&#125;</span><br><span class="line">.cude-out .out-top &#123;</span><br><span class="line">  transform: rotateX(90deg) translateZ(100px);</span><br><span class="line">  background: #00FF00;</span><br><span class="line">&#125;</span><br><span class="line">.cude-out .out-bottom &#123;</span><br><span class="line">  transform: rotateX(-90deg) translateZ(100px);</span><br><span class="line">  background: #5e6166;</span><br><span class="line">&#125;</span><br><span class="line">.cude .cude-in &#123;</span><br><span class="line">  top: 50px;</span><br><span class="line">  left: 50px;</span><br><span class="line">  width: 100px;</span><br><span class="line">  height: 100px;</span><br><span class="line">  position: absolute;</span><br><span class="line">&#125;</span><br><span class="line">.cude-in div &#123;</span><br><span class="line">  width: 100px;</span><br><span class="line">  height: 100px;</span><br><span class="line">  position: absolute;</span><br><span class="line">&#125;</span><br><span class="line">.cude-in img &#123;</span><br><span class="line">  width: 100px;</span><br><span class="line">  height: 100px;</span><br><span class="line">&#125;</span><br><span class="line">.cude-in .in-font &#123;</span><br><span class="line">  transform: translateZ(50px);</span><br><span class="line">&#125;</span><br><span class="line">.cude-in .in-back &#123;</span><br><span class="line">  transform: translateZ(-50px);</span><br><span class="line">&#125;</span><br><span class="line">.cude-in .in-left &#123;</span><br><span class="line">  transform: rotateY(90deg) translateZ(50px);</span><br><span class="line">&#125;</span><br><span class="line">.cude-in .in-right &#123;</span><br><span class="line">  transform: rotateY(-90deg) translateZ(50px);</span><br><span class="line">&#125;</span><br><span class="line">.cude-in .in-top &#123;</span><br><span class="line">  transform: rotateX(90deg) translateZ(50px);</span><br><span class="line">&#125;</span><br><span class="line">.cude-in .in-bottom &#123;</span><br><span class="line">  transform: rotateX(-90deg) translateZ(50px);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;*鼠标悬浮在外立方体散开*&#x2F;</span><br><span class="line">.cude:hover .cude-out .out-font &#123;</span><br><span class="line">  transform: translateZ(200px);</span><br><span class="line">&#125;</span><br><span class="line">.cude:hover .cude-out .out-back &#123;</span><br><span class="line">  transform: translateZ(-200px);</span><br><span class="line">&#125;</span><br><span class="line">.cude:hover .cude-out .out-left &#123;</span><br><span class="line">  transform: rotateY(90deg) translateZ(200px);</span><br><span class="line">&#125;</span><br><span class="line">.cude:hover .cude-out .out-right &#123;</span><br><span class="line">  transform: rotateY(-90deg) translateZ(200px);</span><br><span class="line">&#125;</span><br><span class="line">.cude:hover .cude-out .out-top &#123;</span><br><span class="line">  transform: rotateX(90deg) translateZ(200px);</span><br><span class="line">&#125;</span><br><span class="line">.cude:hover .cude-out .out-bottom &#123;</span><br><span class="line">  transform: rotateX(-90deg) translateZ(200px);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;*鼠标悬浮在内立方体散开*&#x2F;</span><br><span class="line">.cude:hover .cude-in .in-font &#123;</span><br><span class="line">  transform: translateZ(100px);</span><br><span class="line">&#125;</span><br><span class="line">.cude:hover .cude-in .in-back &#123;</span><br><span class="line">  transform: translateZ(-100px);</span><br><span class="line">&#125;</span><br><span class="line">.cude:hover .cude-in .in-left &#123;</span><br><span class="line">  transform: rotateY(90deg) translateZ(100px);</span><br><span class="line">&#125;</span><br><span class="line">.cude:hover .cude-in .in-right &#123;</span><br><span class="line">  transform: rotateY(-90deg) translateZ(100px);</span><br><span class="line">&#125;</span><br><span class="line">.cude:hover .cude-in .in-top &#123;</span><br><span class="line">  transform: rotateX(90deg) translateZ(100px);</span><br><span class="line">&#125;</span><br><span class="line">.cude:hover .cude-in .in-bottom &#123;</span><br><span class="line">  transform: rotateX(-90deg) translateZ(100px);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="hexo搭建博客"><a href="#hexo搭建博客" class="headerlink" title="hexo搭建博客"></a>hexo搭建博客</h1><a id="more"></a>
 
-<h4 id="html"><a href="#html" class="headerlink" title="html"></a>html</h4><p>html：index.html</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang&#x3D;&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">  &lt;meta charset&#x3D;&quot;UTF-8&quot;&gt;</span><br><span class="line">  &lt;title&gt;旋转相册&lt;&#x2F;title&gt;</span><br><span class="line">  &lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;css&#x2F;index.css&quot;&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br><span class="line"></span><br><span class="line">&lt;body&gt;</span><br><span class="line">  &lt;div class&#x3D;&quot;cude&quot;&gt;</span><br><span class="line">    &lt;!--外立方体--&gt;</span><br><span class="line">    &lt;div class&#x3D;&quot;cude-out&quot;&gt;</span><br><span class="line">      &lt;div class&#x3D;&quot;out-font&quot;&gt;</span><br><span class="line">        &lt;img src&#x3D;&quot;images&#x2F;reba-1.jpg&quot; alt&#x3D;&quot;&quot;&gt;</span><br><span class="line">      &lt;&#x2F;div&gt;</span><br><span class="line">      &lt;div class&#x3D;&quot;out-back&quot;&gt;</span><br><span class="line">        &lt;img src&#x3D;&quot;images&#x2F;reba-2.jpg&quot; alt&#x3D;&quot;&quot;&gt;</span><br><span class="line">      &lt;&#x2F;div&gt;</span><br><span class="line">      &lt;div class&#x3D;&quot;out-left&quot;&gt;</span><br><span class="line">        &lt;img src&#x3D;&quot;images&#x2F;reba-3.jpg&quot; alt&#x3D;&quot;&quot;&gt;</span><br><span class="line">      &lt;&#x2F;div&gt;</span><br><span class="line">      &lt;div class&#x3D;&quot;out-right&quot;&gt;</span><br><span class="line">        &lt;img src&#x3D;&quot;images&#x2F;reba-4.jpg&quot; alt&#x3D;&quot;&quot;&gt;</span><br><span class="line">      &lt;&#x2F;div&gt;</span><br><span class="line">      &lt;div class&#x3D;&quot;out-top&quot;&gt;</span><br><span class="line">        &lt;img src&#x3D;&quot;images&#x2F;reba-5.jpg&quot; alt&#x3D;&quot;&quot;&gt;</span><br><span class="line">      &lt;&#x2F;div&gt;</span><br><span class="line">      &lt;div class&#x3D;&quot;out-bottom&quot;&gt;</span><br><span class="line">        &lt;img src&#x3D;&quot;images&#x2F;reba-6.jpg&quot; alt&#x3D;&quot;&quot;&gt;</span><br><span class="line">      &lt;&#x2F;div&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">    &lt;!--内立方体--&gt;</span><br><span class="line">    &lt;div class&#x3D;&quot;cude-in&quot;&gt;</span><br><span class="line">      &lt;div class&#x3D;&quot;in-font&quot;&gt;</span><br><span class="line">        &lt;img src&#x3D;&quot;images&#x2F;reba-1.jpg&quot; alt&#x3D;&quot;&quot;&gt;</span><br><span class="line">      &lt;&#x2F;div&gt;</span><br><span class="line">      &lt;div class&#x3D;&quot;in-back&quot;&gt;</span><br><span class="line">        &lt;img src&#x3D;&quot;images&#x2F;reba-2.jpg&quot; alt&#x3D;&quot;&quot;&gt;</span><br><span class="line">      &lt;&#x2F;div&gt;</span><br><span class="line">      &lt;div class&#x3D;&quot;in-left&quot;&gt;</span><br><span class="line">        &lt;img src&#x3D;&quot;images&#x2F;reba-3.jpg&quot; alt&#x3D;&quot;&quot;&gt;</span><br><span class="line">      &lt;&#x2F;div&gt;</span><br><span class="line">      &lt;div class&#x3D;&quot;in-right&quot;&gt;</span><br><span class="line">        &lt;img src&#x3D;&quot;images&#x2F;reba-4.jpg&quot; alt&#x3D;&quot;&quot;&gt;</span><br><span class="line">      &lt;&#x2F;div&gt;</span><br><span class="line">      &lt;div class&#x3D;&quot;in-top&quot;&gt;</span><br><span class="line">        &lt;img src&#x3D;&quot;images&#x2F;reba-5.jpg&quot; alt&#x3D;&quot;&quot;&gt;</span><br><span class="line">      &lt;&#x2F;div&gt;</span><br><span class="line">      &lt;div class&#x3D;&quot;in-bottom&quot;&gt;</span><br><span class="line">        &lt;img src&#x3D;&quot;images&#x2F;reba-6.jpg&quot; alt&#x3D;&quot;&quot;&gt;</span><br><span class="line">      &lt;&#x2F;div&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">  &lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
-
+<h2 id="创建文章"><a href="#创建文章" class="headerlink" title="创建文章"></a>创建文章</h2><p>在站点文件夹中打开git bash，输入如下命令创建文章，其中title为文章的标题。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo new &quot;title&quot;</span><br></pre></td></tr></table></figure>
+<p>此时会在source/_post文件夹中创建了一个名为title.md的文件，而这个文件也就是将要发布到网站上的原始文件，记录文章内容。</p>
+<ul>
+<li><p>注意<br>hexo new &lt;模板&gt; &lt;文章名&gt;中，&lt;模板&gt;在scaffolds中，默认情况下是有三个模板post、draft、page。具体如下：</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>功能</th>
+<th>路径</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>post</td>
+<td>新建文章</td>
+<td>/source/_post/</td>
+</tr>
+<tr>
+<td>draft</td>
+<td>新建草稿</td>
+<td>/source/_drafts/</td>
+</tr>
+<tr>
+<td>page</td>
+<td>新建页面（标签页，分类页等）</td>
+<td>/source/</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<h2 id="Markdown语法"><a href="#Markdown语法" class="headerlink" title="Markdown语法"></a>Markdown语法</h2><p>  Markdown语法的具体详情参考</p>
+<h2 id="编辑文章"><a href="#编辑文章" class="headerlink" title="编辑文章"></a>编辑文章</h2><h3 id="模板设置"><a href="#模板设置" class="headerlink" title="模板设置"></a>模板设置</h3><p>在使用命令 <code>hexo new &quot;title&quot;</code>创建文章时，Hexo会根据/scaffolds/post.md对文章进行初始化，换言之，/scaffolds/post.md/就是新文章的模板。</p>
+<p>title: Hexo-撰写文章<br>date: 1592965232000<br>tags:<br>categories: </p>
+<h3 id="头部设置"><a href="#头部设置" class="headerlink" title="头部设置"></a>头部设置</h3><p>在每篇利用 Hexo 创建的文章的开头，都会有对文章进行说明的文字，叫做 文章头部文章的头部除了可以设置文章标题、发布日期等基础信息外，还可以为文章添加标签、分类等。<br>一个简单的示例如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">title: Title</span><br><span class="line">date: YYYY-MM-DD HH:MM:SS</span><br><span class="line">tags: [tag1, tag2, ...]</span><br><span class="line">categories: category</span><br></pre></td></tr></table></figure>
+<p><strong>注意：</strong>  属性与属性之间必须有一个空格，否则会解析错误。</p>
+<h3 id="首页显示"><a href="#首页显示" class="headerlink" title="首页显示"></a>首页显示</h3><p>在利用 Hexo 框架搭建的博客网站中，首页会显示文章的内容，且默认显示文章的全部内容，如果当文章太长的时候就会显得十分冗余，所以我们有必要对其进行精简。这时，我们只需在文章中使用 <code>&lt;!--more--&gt;</code> 标志即可，表示只会显示标志前面的内容</p>
+<h2 id="发布文章"><a href="#发布文章" class="headerlink" title="发布文章"></a>发布文章</h2><p>在站点文件夹中打开 git bash，输入如下命令部署和发布文章</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo g -d</span><br></pre></td></tr></table></figure>
+<p>建议：在使用 hexo g 部署之后，可以先使用 hexo s 运行本地站点，然后在浏览器输入地址 <a href="http://lacolhost:4000/" target="_blank" rel="noopener">http://lacolhost:4000/</a> 查看运行结果，检查无误后再使用 hexo d 发布</p>
 ]]></content>
       <categories>
-        <category>project</category>
+        <category>搭建博客</category>
       </categories>
       <tags>
-        <tag>project</tag>
-        <tag>css</tag>
-        <tag>抖音</tag>
-        <tag>HTML</tag>
-        <tag>相册</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>git上传本地项目到GitHub</title>
-    <url>/jinlanzhu.github.io/2020/07/01/git/</url>
-    <content><![CDATA[<p>主要介绍git将本地文件推送到GitHub远程仓库，主要包括git将本地文件推送到GitHub远程仓库的使用实例、基本知识点以及注意事项。</p>
-<a id="more"></a>
-
-<h2 id="创建新项目"><a href="#创建新项目" class="headerlink" title="创建新项目"></a>创建新项目</h2><p>在GitHub上创建新的项目文件<br><img src="/jinlanzhu.github.io/2020/07/01/git/new.png" alt="新建仓库"><br>创建之后会进入新的页面，看到如下内容<br><img src="/jinlanzhu.github.io/2020/07/01/git/new_1.png" alt="创建页面"></p>
-<h2 id="打开Git"><a href="#打开Git" class="headerlink" title="打开Git"></a>打开Git</h2><h3 id="切换本地项目目录"><a href="#切换本地项目目录" class="headerlink" title="切换本地项目目录"></a>切换本地项目目录</h3><p>打开本地项目目录<br><img src="/jinlanzhu.github.io/2020/07/01/git/local.png" alt="本地目录"></p>
-<h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><p>输入：<code>git init</code>，是让当前项目的目录中生成本地的git管理<br><img src="/jinlanzhu.github.io/2020/07/01/git/init.png" alt="初始化"></p>
-<h3 id="添加"><a href="#添加" class="headerlink" title="添加"></a>添加</h3><p>输入：<code>git add .</code>，将项目上的所有文件添加到仓库<br><img src="/jinlanzhu.github.io/2020/07/01/git/add.png" alt="添加"></p>
-<h3 id="提交"><a href="#提交" class="headerlink" title="提交"></a>提交</h3><p>输入：<code>git commit -m &quot;&quot;</code>，进行提交<br><img src="/jinlanzhu.github.io/2020/07/01/git/commit.png" alt="提交"></p>
-<h2 id="关联GitHub"><a href="#关联GitHub" class="headerlink" title="关联GitHub"></a>关联GitHub</h2><h3 id="添加远程库"><a href="#添加远程库" class="headerlink" title="添加远程库"></a>添加远程库</h3><p>输入：<code>git remote add origin https://github.com/jinlanzhu/survey.git</code>，将本地的仓库关联到GitHub上<br><img src="/jinlanzhu.github.io/2020/07/01/git/remote_add.png" alt="提交"></p>
-<h3 id="推送"><a href="#推送" class="headerlink" title="推送"></a>推送</h3><p>输入<code>git push origin master</code>，将本地代码上传到GitHub仓库<br>如果没有异常，会等待几秒，然后跳出一个让你输入Username和Password 的窗口，你只要输入github的登录账号和密码就行了<br><img src="/jinlanzhu.github.io/2020/07/01/git/push.png" alt="提交"></p>
-<p>若出现</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">To https:&#x2F;&#x2F;github.com&#x2F;jinlanzhu&#x2F;rotate_photo.git</span><br><span class="line"> ! [rejected]        master -&gt; master (fetch first)</span><br><span class="line">error: failed to push some refs to &#39;https:&#x2F;&#x2F;github.com&#x2F;jinlanzhu&#x2F;rotate_photo.git&#39;</span><br><span class="line">hint: Updates were rejected because the remote contains work that you do</span><br><span class="line">hint: not have locally. This is usually caused by another repository pushing</span><br><span class="line">hint: to the same ref. You may want to first integrate the remote changes</span><br><span class="line">hint: (e.g., &#39;git pull ...&#39;) before pushing again.</span><br><span class="line">hint: See the &#39;Note about fast-forwards&#39; in &#39;git push --help&#39; for details.</span><br></pre></td></tr></table></figure>
-<p>输入<code>git pull --rebase origin master</code>，再输入<code>git push origin master</code>，再输入即可。<br><img src="/jinlanzhu.github.io/2020/07/01/git/unnomal.png" alt="提交"><br><img src="/jinlanzhu.github.io/2020/07/01/git/unnomal_deal.png" alt="提交"></p>
-]]></content>
-      <categories>
-        <category>git</category>
-      </categories>
-      <tags>
-        <tag>git</tag>
-        <tag>GitHub</tag>
+        <tag>Hexo</tag>
+        <tag>Markdown</tag>
       </tags>
   </entry>
   <entry>
@@ -203,60 +208,28 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo-撰写文章</title>
-    <url>/jinlanzhu.github.io/2020/06/24/Hexo-%E6%92%B0%E5%86%99%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer">
+    <title>git上传本地项目到GitHub</title>
+    <url>/jinlanzhu.github.io/2020/07/01/git/</url>
+    <content><![CDATA[<p>主要介绍git将本地文件推送到GitHub远程仓库，主要包括git将本地文件推送到GitHub远程仓库的使用实例、基本知识点以及注意事项。</p>
+<a id="more"></a>
 
-<h1 id="hexo搭建博客"><a href="#hexo搭建博客" class="headerlink" title="hexo搭建博客"></a>hexo搭建博客</h1><a id="more"></a>
-
-<h2 id="创建文章"><a href="#创建文章" class="headerlink" title="创建文章"></a>创建文章</h2><p>在站点文件夹中打开git bash，输入如下命令创建文章，其中title为文章的标题。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo new &quot;title&quot;</span><br></pre></td></tr></table></figure>
-<p>此时会在source/_post文件夹中创建了一个名为title.md的文件，而这个文件也就是将要发布到网站上的原始文件，记录文章内容。</p>
-<ul>
-<li><p>注意<br>hexo new &lt;模板&gt; &lt;文章名&gt;中，&lt;模板&gt;在scaffolds中，默认情况下是有三个模板post、draft、page。具体如下：</p>
-<table>
-<thead>
-<tr>
-<th>参数</th>
-<th>功能</th>
-<th>路径</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>post</td>
-<td>新建文章</td>
-<td>/source/_post/</td>
-</tr>
-<tr>
-<td>draft</td>
-<td>新建草稿</td>
-<td>/source/_drafts/</td>
-</tr>
-<tr>
-<td>page</td>
-<td>新建页面（标签页，分类页等）</td>
-<td>/source/</td>
-</tr>
-</tbody></table>
-</li>
-</ul>
-<h2 id="Markdown语法"><a href="#Markdown语法" class="headerlink" title="Markdown语法"></a>Markdown语法</h2><p>  Markdown语法的具体详情参考</p>
-<h2 id="编辑文章"><a href="#编辑文章" class="headerlink" title="编辑文章"></a>编辑文章</h2><h3 id="模板设置"><a href="#模板设置" class="headerlink" title="模板设置"></a>模板设置</h3><p>在使用命令 <code>hexo new &quot;title&quot;</code>创建文章时，Hexo会根据/scaffolds/post.md对文章进行初始化，换言之，/scaffolds/post.md/就是新文章的模板。</p>
-<p>title: Hexo-撰写文章<br>date: 1592965232000<br>tags:<br>categories: </p>
-<h3 id="头部设置"><a href="#头部设置" class="headerlink" title="头部设置"></a>头部设置</h3><p>在每篇利用 Hexo 创建的文章的开头，都会有对文章进行说明的文字，叫做 文章头部文章的头部除了可以设置文章标题、发布日期等基础信息外，还可以为文章添加标签、分类等。<br>一个简单的示例如下：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">title: Title</span><br><span class="line">date: YYYY-MM-DD HH:MM:SS</span><br><span class="line">tags: [tag1, tag2, ...]</span><br><span class="line">categories: category</span><br></pre></td></tr></table></figure>
-<p><strong>注意：</strong>  属性与属性之间必须有一个空格，否则会解析错误。</p>
-<h3 id="首页显示"><a href="#首页显示" class="headerlink" title="首页显示"></a>首页显示</h3><p>在利用 Hexo 框架搭建的博客网站中，首页会显示文章的内容，且默认显示文章的全部内容，如果当文章太长的时候就会显得十分冗余，所以我们有必要对其进行精简。这时，我们只需在文章中使用 <code>&lt;!--more--&gt;</code> 标志即可，表示只会显示标志前面的内容</p>
-<h2 id="发布文章"><a href="#发布文章" class="headerlink" title="发布文章"></a>发布文章</h2><p>在站点文件夹中打开 git bash，输入如下命令部署和发布文章</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo g -d</span><br></pre></td></tr></table></figure>
-<p>建议：在使用 hexo g 部署之后，可以先使用 hexo s 运行本地站点，然后在浏览器输入地址 <a href="http://lacolhost:4000/" target="_blank" rel="noopener">http://lacolhost:4000/</a> 查看运行结果，检查无误后再使用 hexo d 发布</p>
+<h2 id="创建新项目"><a href="#创建新项目" class="headerlink" title="创建新项目"></a>创建新项目</h2><p>在GitHub上创建新的项目文件<br><img src="/jinlanzhu.github.io/2020/07/01/git/new.png" alt="新建仓库"><br>创建之后会进入新的页面，看到如下内容<br><img src="/jinlanzhu.github.io/2020/07/01/git/new_1.png" alt="创建页面"></p>
+<h2 id="打开Git"><a href="#打开Git" class="headerlink" title="打开Git"></a>打开Git</h2><h3 id="切换本地项目目录"><a href="#切换本地项目目录" class="headerlink" title="切换本地项目目录"></a>切换本地项目目录</h3><p>打开本地项目目录<br><img src="/jinlanzhu.github.io/2020/07/01/git/local.png" alt="本地目录"></p>
+<h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><p>输入：<code>git init</code>，是让当前项目的目录中生成本地的git管理<br><img src="/jinlanzhu.github.io/2020/07/01/git/init.png" alt="初始化"></p>
+<h3 id="添加"><a href="#添加" class="headerlink" title="添加"></a>添加</h3><p>输入：<code>git add .</code>，将项目上的所有文件添加到仓库<br><img src="/jinlanzhu.github.io/2020/07/01/git/add.png" alt="添加"></p>
+<h3 id="提交"><a href="#提交" class="headerlink" title="提交"></a>提交</h3><p>输入：<code>git commit -m &quot;&quot;</code>，进行提交<br><img src="/jinlanzhu.github.io/2020/07/01/git/commit.png" alt="提交"></p>
+<h2 id="关联GitHub"><a href="#关联GitHub" class="headerlink" title="关联GitHub"></a>关联GitHub</h2><h3 id="添加远程库"><a href="#添加远程库" class="headerlink" title="添加远程库"></a>添加远程库</h3><p>输入：<code>git remote add origin https://github.com/jinlanzhu/survey.git</code>，将本地的仓库关联到GitHub上<br><img src="/jinlanzhu.github.io/2020/07/01/git/remote_add.png" alt="提交"></p>
+<h3 id="推送"><a href="#推送" class="headerlink" title="推送"></a>推送</h3><p>输入<code>git push origin master</code>，将本地代码上传到GitHub仓库<br>如果没有异常，会等待几秒，然后跳出一个让你输入Username和Password 的窗口，你只要输入github的登录账号和密码就行了<br><img src="/jinlanzhu.github.io/2020/07/01/git/push.png" alt="提交"></p>
+<p>若出现</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">To https:&#x2F;&#x2F;github.com&#x2F;jinlanzhu&#x2F;rotate_photo.git</span><br><span class="line"> ! [rejected]        master -&gt; master (fetch first)</span><br><span class="line">error: failed to push some refs to &#39;https:&#x2F;&#x2F;github.com&#x2F;jinlanzhu&#x2F;rotate_photo.git&#39;</span><br><span class="line">hint: Updates were rejected because the remote contains work that you do</span><br><span class="line">hint: not have locally. This is usually caused by another repository pushing</span><br><span class="line">hint: to the same ref. You may want to first integrate the remote changes</span><br><span class="line">hint: (e.g., &#39;git pull ...&#39;) before pushing again.</span><br><span class="line">hint: See the &#39;Note about fast-forwards&#39; in &#39;git push --help&#39; for details.</span><br></pre></td></tr></table></figure>
+<p>输入<code>git pull --rebase origin master</code>，再输入<code>git push origin master</code>，再输入即可。<br><img src="/jinlanzhu.github.io/2020/07/01/git/unnomal.png" alt="提交"><br><img src="/jinlanzhu.github.io/2020/07/01/git/unnomal_deal.png" alt="提交"></p>
 ]]></content>
       <categories>
-        <category>搭建博客</category>
+        <category>git</category>
       </categories>
       <tags>
-        <tag>Hexo</tag>
-        <tag>Markdown</tag>
+        <tag>git</tag>
+        <tag>GitHub</tag>
       </tags>
   </entry>
   <entry>
@@ -278,5 +251,32 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>3D旋转相册</title>
+    <url>/jinlanzhu.github.io/2020/07/01/project/</url>
+    <content><![CDATA[<p><font>抖音很火的3d旋转相册！</font></p>
+<a id="more"></a>
+
+<h2 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h2><p>具体详情可到：<a href="https://jinlanzhu.github.io/rotate_photo/" title="旋转相册">旋转相册</a></p>
+<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><h3 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h3><p>先准备12张图片备用（也可以是6张），放到images文件夹中<br><img src="/jinlanzhu.github.io/2020/07/01/project/photo_img.png" alt="相册图片准备"></p>
+<h3 id="文件结构"><a href="#文件结构" class="headerlink" title="文件结构"></a>文件结构</h3><p><img src="/jinlanzhu.github.io/2020/07/01/project/photo_index.png" alt="文件结构"></p>
+<h4 id="css"><a href="#css" class="headerlink" title="css"></a>css</h4><p>css文件夹：index.css</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">body, div, img &#123;</span><br><span class="line">  margin: 0;</span><br><span class="line">  padding: 0;</span><br><span class="line">&#125;</span><br><span class="line">body &#123;</span><br><span class="line">  width: 100%;</span><br><span class="line">  height: 600px;</span><br><span class="line">  background: linear-gradient(#fb3 20%, #58a 80%);</span><br><span class="line">&#125;</span><br><span class="line">.cude &#123;</span><br><span class="line">  width: 200px;</span><br><span class="line">  height: 200px;</span><br><span class="line">  margin: 200px auto;</span><br><span class="line">  transform-style: preserve-3d;</span><br><span class="line">  animation: rotate 20s infinite;</span><br><span class="line">  animation-timing-function: linear;</span><br><span class="line">&#125;</span><br><span class="line">.cude .cude-out &#123;</span><br><span class="line">  width: 200px;</span><br><span class="line">  height: 200px;</span><br><span class="line">  position: relative;</span><br><span class="line">&#125;</span><br><span class="line">.cude-out div&#123;</span><br><span class="line">  width: 200px;</span><br><span class="line">  height: 200px;</span><br><span class="line">  position: absolute;</span><br><span class="line">  transition: all .4s;</span><br><span class="line">&#125;</span><br><span class="line">.cude-out div img &#123;</span><br><span class="line">  width: 200px;</span><br><span class="line">  height: 200px;</span><br><span class="line">&#125;</span><br><span class="line">@keyframes rotate &#123;</span><br><span class="line">  from &#123;</span><br><span class="line">    transform: rotateX(0deg) rotateY(0deg);</span><br><span class="line">  &#125;</span><br><span class="line">  to &#123;</span><br><span class="line">    transform: rotateX(360deg) rotateY(360deg);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">.cude-out .out-font &#123;</span><br><span class="line">  transform: translateZ(100px);</span><br><span class="line">  background: #9ccd63;</span><br><span class="line">&#125;</span><br><span class="line">.cude-out .out-back &#123;</span><br><span class="line">  transform: translateZ(-100px);</span><br><span class="line">  background: #ddce4a;</span><br><span class="line">&#125;</span><br><span class="line">.cude-out .out-left &#123;</span><br><span class="line">  transform: rotateY(90deg) translateZ(100px);</span><br><span class="line">  background: #00FFFF;</span><br><span class="line">&#125;</span><br><span class="line">.cude-out .out-right &#123;</span><br><span class="line">  transform: rotateY(-90deg) translateZ(100px);</span><br><span class="line">  background: #0000FF;</span><br><span class="line">&#125;</span><br><span class="line">.cude-out .out-top &#123;</span><br><span class="line">  transform: rotateX(90deg) translateZ(100px);</span><br><span class="line">  background: #00FF00;</span><br><span class="line">&#125;</span><br><span class="line">.cude-out .out-bottom &#123;</span><br><span class="line">  transform: rotateX(-90deg) translateZ(100px);</span><br><span class="line">  background: #5e6166;</span><br><span class="line">&#125;</span><br><span class="line">.cude .cude-in &#123;</span><br><span class="line">  top: 50px;</span><br><span class="line">  left: 50px;</span><br><span class="line">  width: 100px;</span><br><span class="line">  height: 100px;</span><br><span class="line">  position: absolute;</span><br><span class="line">&#125;</span><br><span class="line">.cude-in div &#123;</span><br><span class="line">  width: 100px;</span><br><span class="line">  height: 100px;</span><br><span class="line">  position: absolute;</span><br><span class="line">&#125;</span><br><span class="line">.cude-in img &#123;</span><br><span class="line">  width: 100px;</span><br><span class="line">  height: 100px;</span><br><span class="line">&#125;</span><br><span class="line">.cude-in .in-font &#123;</span><br><span class="line">  transform: translateZ(50px);</span><br><span class="line">&#125;</span><br><span class="line">.cude-in .in-back &#123;</span><br><span class="line">  transform: translateZ(-50px);</span><br><span class="line">&#125;</span><br><span class="line">.cude-in .in-left &#123;</span><br><span class="line">  transform: rotateY(90deg) translateZ(50px);</span><br><span class="line">&#125;</span><br><span class="line">.cude-in .in-right &#123;</span><br><span class="line">  transform: rotateY(-90deg) translateZ(50px);</span><br><span class="line">&#125;</span><br><span class="line">.cude-in .in-top &#123;</span><br><span class="line">  transform: rotateX(90deg) translateZ(50px);</span><br><span class="line">&#125;</span><br><span class="line">.cude-in .in-bottom &#123;</span><br><span class="line">  transform: rotateX(-90deg) translateZ(50px);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;*鼠标悬浮在外立方体散开*&#x2F;</span><br><span class="line">.cude:hover .cude-out .out-font &#123;</span><br><span class="line">  transform: translateZ(200px);</span><br><span class="line">&#125;</span><br><span class="line">.cude:hover .cude-out .out-back &#123;</span><br><span class="line">  transform: translateZ(-200px);</span><br><span class="line">&#125;</span><br><span class="line">.cude:hover .cude-out .out-left &#123;</span><br><span class="line">  transform: rotateY(90deg) translateZ(200px);</span><br><span class="line">&#125;</span><br><span class="line">.cude:hover .cude-out .out-right &#123;</span><br><span class="line">  transform: rotateY(-90deg) translateZ(200px);</span><br><span class="line">&#125;</span><br><span class="line">.cude:hover .cude-out .out-top &#123;</span><br><span class="line">  transform: rotateX(90deg) translateZ(200px);</span><br><span class="line">&#125;</span><br><span class="line">.cude:hover .cude-out .out-bottom &#123;</span><br><span class="line">  transform: rotateX(-90deg) translateZ(200px);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;*鼠标悬浮在内立方体散开*&#x2F;</span><br><span class="line">.cude:hover .cude-in .in-font &#123;</span><br><span class="line">  transform: translateZ(100px);</span><br><span class="line">&#125;</span><br><span class="line">.cude:hover .cude-in .in-back &#123;</span><br><span class="line">  transform: translateZ(-100px);</span><br><span class="line">&#125;</span><br><span class="line">.cude:hover .cude-in .in-left &#123;</span><br><span class="line">  transform: rotateY(90deg) translateZ(100px);</span><br><span class="line">&#125;</span><br><span class="line">.cude:hover .cude-in .in-right &#123;</span><br><span class="line">  transform: rotateY(-90deg) translateZ(100px);</span><br><span class="line">&#125;</span><br><span class="line">.cude:hover .cude-in .in-top &#123;</span><br><span class="line">  transform: rotateX(90deg) translateZ(100px);</span><br><span class="line">&#125;</span><br><span class="line">.cude:hover .cude-in .in-bottom &#123;</span><br><span class="line">  transform: rotateX(-90deg) translateZ(100px);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="html"><a href="#html" class="headerlink" title="html"></a>html</h4><p>html：index.html</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang&#x3D;&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">  &lt;meta charset&#x3D;&quot;UTF-8&quot;&gt;</span><br><span class="line">  &lt;title&gt;旋转相册&lt;&#x2F;title&gt;</span><br><span class="line">  &lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;css&#x2F;index.css&quot;&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br><span class="line"></span><br><span class="line">&lt;body&gt;</span><br><span class="line">  &lt;div class&#x3D;&quot;cude&quot;&gt;</span><br><span class="line">    &lt;!--外立方体--&gt;</span><br><span class="line">    &lt;div class&#x3D;&quot;cude-out&quot;&gt;</span><br><span class="line">      &lt;div class&#x3D;&quot;out-font&quot;&gt;</span><br><span class="line">        &lt;img src&#x3D;&quot;images&#x2F;reba-1.jpg&quot; alt&#x3D;&quot;&quot;&gt;</span><br><span class="line">      &lt;&#x2F;div&gt;</span><br><span class="line">      &lt;div class&#x3D;&quot;out-back&quot;&gt;</span><br><span class="line">        &lt;img src&#x3D;&quot;images&#x2F;reba-2.jpg&quot; alt&#x3D;&quot;&quot;&gt;</span><br><span class="line">      &lt;&#x2F;div&gt;</span><br><span class="line">      &lt;div class&#x3D;&quot;out-left&quot;&gt;</span><br><span class="line">        &lt;img src&#x3D;&quot;images&#x2F;reba-3.jpg&quot; alt&#x3D;&quot;&quot;&gt;</span><br><span class="line">      &lt;&#x2F;div&gt;</span><br><span class="line">      &lt;div class&#x3D;&quot;out-right&quot;&gt;</span><br><span class="line">        &lt;img src&#x3D;&quot;images&#x2F;reba-4.jpg&quot; alt&#x3D;&quot;&quot;&gt;</span><br><span class="line">      &lt;&#x2F;div&gt;</span><br><span class="line">      &lt;div class&#x3D;&quot;out-top&quot;&gt;</span><br><span class="line">        &lt;img src&#x3D;&quot;images&#x2F;reba-5.jpg&quot; alt&#x3D;&quot;&quot;&gt;</span><br><span class="line">      &lt;&#x2F;div&gt;</span><br><span class="line">      &lt;div class&#x3D;&quot;out-bottom&quot;&gt;</span><br><span class="line">        &lt;img src&#x3D;&quot;images&#x2F;reba-6.jpg&quot; alt&#x3D;&quot;&quot;&gt;</span><br><span class="line">      &lt;&#x2F;div&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">    &lt;!--内立方体--&gt;</span><br><span class="line">    &lt;div class&#x3D;&quot;cude-in&quot;&gt;</span><br><span class="line">      &lt;div class&#x3D;&quot;in-font&quot;&gt;</span><br><span class="line">        &lt;img src&#x3D;&quot;images&#x2F;reba-1.jpg&quot; alt&#x3D;&quot;&quot;&gt;</span><br><span class="line">      &lt;&#x2F;div&gt;</span><br><span class="line">      &lt;div class&#x3D;&quot;in-back&quot;&gt;</span><br><span class="line">        &lt;img src&#x3D;&quot;images&#x2F;reba-2.jpg&quot; alt&#x3D;&quot;&quot;&gt;</span><br><span class="line">      &lt;&#x2F;div&gt;</span><br><span class="line">      &lt;div class&#x3D;&quot;in-left&quot;&gt;</span><br><span class="line">        &lt;img src&#x3D;&quot;images&#x2F;reba-3.jpg&quot; alt&#x3D;&quot;&quot;&gt;</span><br><span class="line">      &lt;&#x2F;div&gt;</span><br><span class="line">      &lt;div class&#x3D;&quot;in-right&quot;&gt;</span><br><span class="line">        &lt;img src&#x3D;&quot;images&#x2F;reba-4.jpg&quot; alt&#x3D;&quot;&quot;&gt;</span><br><span class="line">      &lt;&#x2F;div&gt;</span><br><span class="line">      &lt;div class&#x3D;&quot;in-top&quot;&gt;</span><br><span class="line">        &lt;img src&#x3D;&quot;images&#x2F;reba-5.jpg&quot; alt&#x3D;&quot;&quot;&gt;</span><br><span class="line">      &lt;&#x2F;div&gt;</span><br><span class="line">      &lt;div class&#x3D;&quot;in-bottom&quot;&gt;</span><br><span class="line">        &lt;img src&#x3D;&quot;images&#x2F;reba-6.jpg&quot; alt&#x3D;&quot;&quot;&gt;</span><br><span class="line">      &lt;&#x2F;div&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">  &lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>project</category>
+      </categories>
+      <tags>
+        <tag>project</tag>
+        <tag>css</tag>
+        <tag>抖音</tag>
+        <tag>HTML</tag>
+        <tag>相册</tag>
+      </tags>
   </entry>
 </search>
