@@ -427,11 +427,6 @@
           
 
           
-            <span class="post-meta-divider">|</span>
-            <span class="page-pv"><i class="fa fa-file-o"></i>
-            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
-            </span>
-          
 
           
             <div class="post-wordcount">
@@ -549,15 +544,15 @@
       
         <div class="post-tags">
           
-            <a href="/jinlanzhu.github.io/tags/project/" rel="tag"># project</a>
+            <a href="/jinlanzhu.github.io/tags/project/" rel="tag"><i class="fa fa-tag"></i> project</a>
           
-            <a href="/jinlanzhu.github.io/tags/css/" rel="tag"># css</a>
+            <a href="/jinlanzhu.github.io/tags/css/" rel="tag"><i class="fa fa-tag"></i> css</a>
           
-            <a href="/jinlanzhu.github.io/tags/%E6%8A%96%E9%9F%B3/" rel="tag"># 抖音</a>
+            <a href="/jinlanzhu.github.io/tags/%E6%8A%96%E9%9F%B3/" rel="tag"><i class="fa fa-tag"></i> 抖音</a>
           
-            <a href="/jinlanzhu.github.io/tags/HTML/" rel="tag"># HTML</a>
+            <a href="/jinlanzhu.github.io/tags/HTML/" rel="tag"><i class="fa fa-tag"></i> HTML</a>
           
-            <a href="/jinlanzhu.github.io/tags/%E7%9B%B8%E5%86%8C/" rel="tag"># 相册</a>
+            <a href="/jinlanzhu.github.io/tags/%E7%9B%B8%E5%86%8C/" rel="tag"><i class="fa fa-tag"></i> 相册</a>
           
         </div>
       
@@ -822,30 +817,27 @@
 <div class="theme-info">
   <div class="powered-by"></div>
   <span class="post-count">博客全站共3.4k字</span>
-</div>
-
+</div> |
+<!-- 在网页底部添加网站运行时间 -->
+<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<script>
+    var now = new Date();
+    function createtime() {
+        var grt= new Date("06/21/2020 00:00:00");//此处修改你的建站时间或者网站上线时间
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+        document.getElementById("timeDate").innerHTML = "网站已孵化 "+dnum+" 天 ";
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+    }
+setInterval("createtime()",250);
+</script>
 
         
-<div class="busuanzi-count">
-  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-  
-    <span class="site-uv">
-      <i class="fa fa-user"></i>访问人数
-      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
-      
-    </span>
-  
-
-  
-    <span class="site-pv">
-      <i class="fa fa-eye"></i> 访问总量
-      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
-      次
-    </span>
-  
-</div>
-
 
 
 
